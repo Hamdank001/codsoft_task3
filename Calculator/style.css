@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan";
+}
+
+.cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b4664;
+    color: white;
+}
+
+.title{
+    width: 420px;
+    display: flex;
+    justify-content: left;
+    font-size: x-large;
+}
+
+.input{
+    width: 420px;
+    margin: 17px 0 17px 0;
+}
+.input input{
+    height: 80px;
+    width: 390px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #181F32;
+    border-radius: 7px;
+    border: none;
+    text-align: right;
+    padding-right: 30px;
+}
+.input input::placeholder{
+    height: 100px;
+    width: 385px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.buttonbox{
+    height: 330px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252D44;
+    border-radius: 7px;
+}
+.buttonbox button{
+    height: 40px;
+    width: 73px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #434452;
+    margin: 8px 9px 9px 9px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 3px 1px #B3A79F;
+}
+
+.buttonbox #del{
+    color: white;
+    font-size: 20px;
+    background-color: #637198;
+    box-shadow: 0px 3px 1px #3F4A6E;
+}
+.buttonbox #del:hover{
+    background-color: #A2B3E1;
+}
+.buttonbox #del:active{
+    box-shadow: none;
+}
+
+.buttonbox #res, #equal{
+    width: 167px;
+}
+
+.buttonbox #res{
+    color: white;
+    font-size: 20px;
+    background-color: #637198;
+    box-shadow: 0px 3px 1px #3F4A6E;
+}
+.buttonbox #res:hover{
+    background-color: #A2B3E1;
+}
+.buttonbox #res:active{
+    box-shadow: none;
+}
+
+.buttonbox #equal{
+    font-size: 20px;
+    color: white;
+    background-color: #CA3D2E;
+    box-shadow: 0px 3px 1px #7F251F;
+}
+.buttonbox #equal:hover{
+    background-color: #F86C5B;
+}
+.buttonbox #equal:active{
+    box-shadow: none;
+}
+
+button:active{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 800px){
+    .cont{
+        height: 100dvh;
+    }
+    .title{
+        width: 320px;
+    }
+    .input input{
+        width: 290px;
+        margin-left: 50px;
+    }
+    .input input::placeholder{
+        width: 290px;
+        margin: 0px 0px 0px 150px;
+    }
+    .buttonbox{
+        height: 340px;
+        width: 320px;
+    }
+    .buttonbox button{
+        height: 45px;
+        width: 50px;
+    }
+    .buttonbox #res, #equal{
+        width: 122px;
+    }
+}
